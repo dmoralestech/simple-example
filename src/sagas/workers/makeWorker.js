@@ -16,8 +16,8 @@ export default function* call_fetchMakes(action) {
     yield put(loadData(makes));
     yield put(saveMessage(null));
   } catch (e) {
+    yield put(setError(true));
     if (e.status === 500) {
-      yield put(setError(true));
       yield put(saveMessage('System failure'));
     } else {
       yield put(saveMessage('System is off-line'));

@@ -16,6 +16,7 @@ export function* call_fetchModelsByMake(action) {
     yield put(loadData(models));
     yield put(saveMessage(null));
   } catch (e) {
+    yield put(setError(true));
     if (e.status === 500) {
       yield put(setError(true));
       yield put(saveMessage('System failure'));
@@ -36,6 +37,7 @@ export function* call_fetchModelById(action) {
     yield put(loadData(models));
     yield put(saveMessage(null));
   } catch (e) {
+    yield put(setError(true));
     if (e.status === 500) {
       yield put(saveMessage('System failure'));
     } else {
