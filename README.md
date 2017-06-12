@@ -1,5 +1,11 @@
 # simple example
 
+## Environment Variables
+
+| Name      | Purpose |
+|:----------|:--------|
+| API_URL   | The base Url to the hosted api server. If not set, it assumes localhost |
+| PUBLIC_URL| The Url to the public html server. Values will be embedded into the processed HTML. |
 
 ## Supported Language Features and Polyfills
 

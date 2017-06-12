@@ -26,7 +26,7 @@ export class Home extends Component {
     return (
       <div data-component-name={this.displayName}>
         <h1>Car of the week</h1>
-        <fieldse tabindex="0">
+        <fieldse tabIndex="0">
           <legend id="model" aria-label={`The car of the week is the ${name}`}>{name}</legend>
           <p id="cost"
              aria-label={`The manufacturers suggested retail price is ${currency(numberWithCommas(addZeroes(price)))}`}>MSRP: {currency(numberWithCommas(addZeroes(price)))}</p>
