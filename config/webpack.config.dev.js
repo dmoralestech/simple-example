@@ -247,12 +247,6 @@ module.exports = {
       packageFile:path.join( __dirname, '..', 'package.json'),
       template: path.join(__dirname, '..', 'src', 'version.ejs'),
       outputFile: path.join(__dirname, '..', 'public', 'js', 'version.js')
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        API_URL: JSON.stringify(process.env.API_URL),
-      },
     })
   ],
   // Some libraries import Node modules but don't use them in the browser.
