@@ -10,8 +10,9 @@
 import ACTIONS from './actionTypes/index';
 
 /**
- * Initiate the workflow of requesting data.
+ * Initiate the workflow of requesting data for all the models of a specific make.
  * @function
+ * @param {number|null} id - the id of the make.
  */
 export const fetchModeldByMake = id => ({
   type: ACTIONS.MODEL.INITIATE.BYMAKEID,
@@ -19,8 +20,9 @@ export const fetchModeldByMake = id => ({
 });
 
 /**
- * Initiate the workflow of requesting data.
+ * Initiate the workflow of requesting data for a model by a specific id or if null all models.
  * @function
+ * @param {number|null} id - the id of the model.
  */
 export const fetchModelByModelId = id => ({
   type: ACTIONS.MODEL.INITIATE.BYID,
@@ -28,7 +30,7 @@ export const fetchModelByModelId = id => ({
 });
 
 /**
- * Load the data into the store. Used by a saga, after requestSuccess is called.
+ * Load the data (models) into the store. Used by a saga, after requestSuccess is called.
  * @function
  * @param {*} data - the data to store.
  */

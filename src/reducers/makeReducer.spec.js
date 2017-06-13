@@ -1,15 +1,7 @@
-// let describe = require('mocha').describe;
-// let before = require('mocha').before;
-// let after = require('mocha').after;
-// let it = require('mocha').it;
-// let assert     = require('assert');
-// let should     = require('should');
-let chai = require('chai');
-let assert = require('chai').assert;
-let expect = require('chai').expect;
-
 import reducer from './makeReducer';
 import * as makeActions from '../actionCreators/makeActions';
+
+let expect = require('chai').expect;
 
 describe('REDUCER: ', () => {
 

@@ -7,6 +7,10 @@ import * as api from '../../services/api';
 /** Actual API calls **/
 /** **************** **/
 
+/**
+ * Fetch all the Models by a specific make id, as a Saga, to orchestrate the complexity of events and flow.
+ * @param action
+ */
 export function* call_fetchModelsByMake(action) {
   try {
     yield put(saveMessage('loading'));
@@ -28,6 +32,10 @@ export function* call_fetchModelsByMake(action) {
   }
 }
 
+/**
+ * Fetch a specific Model by a specific make id, as a Saga, to orchestrate the complexity of events and flow.
+ * @param action
+ */
 export function* call_fetchModelById(action) {
   try {
     yield put(saveMessage('loading'));

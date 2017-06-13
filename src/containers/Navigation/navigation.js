@@ -4,6 +4,13 @@ import React from 'react';
 
 import './navigation.css';
 
+/**
+ * The Navigation container.
+ *
+ * You might wonder why this is a container. It is here, because it has a deep reliance on the router
+ *
+ * @constructor
+ */
 export const Navigation = () => (
   <Navbar collapseOnSelect role='navigation'>
     <Navbar.Header>

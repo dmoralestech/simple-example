@@ -3,6 +3,10 @@ import React, {Component} from 'react';
 import {MenuItem} from 'react-bootstrap';
 import classNames from 'classnames';
 
+/**
+ * Select Item, child of the Select component.
+ * @class
+ */
 export default class SelectItem extends Component {
 
   constructor(props) {

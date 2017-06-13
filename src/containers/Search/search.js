@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Select from '../../components/select';
-import SelectItem from '../../components/selectItem';
+import Select from '../../components/select/select';
+import SelectItem from '../../components/selectItem/selectItem';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as MakeAction from '../../actionCreators/makeActions';

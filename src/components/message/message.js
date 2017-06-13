@@ -13,13 +13,13 @@ const alertMessage = (msg) => (<div className="alert alert-danger alert-dismissa
                                         cbtn.focus();
                                       }
                                     }}>
-                                  <a href="#"
+                                  <div
                                      className="close"
                                      data-dismiss="alert"
                                      aria-label="close"
                                      id="message-box-close"
                                      tabIndex="0"
-                                     >&times;</a>
+                                     >&times;</div>
                                   <div id="message"><strong>Warning</strong>&nbsp;{msg}</div>
                                 </div>);
 

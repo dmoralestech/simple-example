@@ -7,6 +7,10 @@ import * as api from '../../services/api';
 /** Actual API calls **/
 /** **************** **/
 
+/**
+ * Fetch All the Makes ( optionally by id ), as a Saga, to orchestrate the complexity of events and flow.
+ * @param action
+ */
 export default function* call_fetchMakes(action) {
   try {
     yield put(saveMessage('loading'));

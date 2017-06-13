@@ -3,6 +3,10 @@ import React, {Component} from 'react';
 import {DropdownButton} from 'react-bootstrap';
 import classNamesFn from 'classnames';
 
+/**
+ * A Select widget.
+ * @class
+ */
 export default class Select extends Component {
 
   constructor(props) {
