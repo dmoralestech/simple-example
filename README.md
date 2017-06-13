@@ -77,4 +77,5 @@ If you use any other ES6+ features that need **runtime support** (such as `Array
 
 ## Known Issues
 1. if you select a make and model, then view the model and decide to come back to change the mode.... the model drop down has lost all the models. I know why, but didnt have time to fix it. This is the same problem that shows two cars, and then one disapears.
+2. Car of the week, has a broken image... oh well.
 2. Slow, very slow.
