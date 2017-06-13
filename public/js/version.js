@@ -1,5 +1,5 @@
 window.version = {
   "name":        "simple-example",
-  "version":     "0.1.0",
-  "environment": "development"
+  "version":     "1.0.2",
+  "environment": "production"
 }
