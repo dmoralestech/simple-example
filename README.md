@@ -1,6 +1,12 @@
 # Simple Example
 
-A Simple example of a progressive Data Drive Drop Down Selection, with ReactJS, Redux, Fetch, Twitter Bootstrap and Accessibility.
+This is a simple example of a progressive Data Drive Drop Down Selection, with ReactJS, Redux, Fetch, Twitter Bootstrap and Accessibility.
+
+Written by Philip A Senger
+
+[philip.a.senger@cngrgroup.com](mailto:philip.a.senger@cngrgroup.com) | mobile: 0404466846 | [CV/Resume](http://www.visualcv.com/philipsenger) | [blog](http://www.apachecommonstipsandtricks.blogspot.com/) | [LinkedIn](http://au.linkedin.com/in/philipsenger) | [twitter](http://twitter.com/PSengerDownUndr) | [keybase](https://keybase.io/psenger)
+
+Website in action is located [here](http://simple-car-example.s3-website-ap-southeast-2.amazonaws.com/)
 
 ## Environment Variables
 
@@ -30,6 +36,7 @@ _For the purpose of demonstrating the developer proficiency_
 * Webpack
 * Ejs
 * Mocha
+* WCAG 2.0 AA
 
 ## Supported Language Features and Polyfills
 
@@ -55,3 +62,15 @@ Note that **the project only includes a few ES6 [polyfills](https://en.wikipedia
 
 If you use any other ES6+ features that need **runtime support** (such as `Array.from()` or `Symbol`), make sure you are including the appropriate polyfills manually, or that the browsers you are targeting already support them.
 
+
+## Developer Notes
+
+1. if you select a make and model, then view the model and decide to come back to change the mode.... the model drop down has lost all the models. I know why, but didnt have time to fix it.
+2. Server Side Rendering is not done.
+3. I wanted to make a loading mask for the images when they where loading, i didnt have time
+4. I used imutable in a couple of places, but in reality I would either use it or not use it on a project. Frankly, I like it, but Im not sure it is needed
+5. Not enough tests, and I didnt have time to build enzyme / jest tests
+6. I wanted to add more CSS styles, and install the SCSS compiler, but I didnt have time.
+7. I wish Amazon didnt change the aws cli, it didnt work for me, so all my gateway code is broken. I had to stand up a server in Heroku to make the server.
+8. I REALLY wanted to make a PWA, with Service Workers, but I didnt have time.
+9. I really like the dev server for Webpack 2 :)
