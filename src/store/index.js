@@ -7,7 +7,11 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 
 const sagaMiddleware = createSagaMiddleware();
 
-let middleware = [sagaMiddleware, reduxLogger];
+let middleware = [sagaMiddleware];
+
+if ( process.env.NODE_ENV === 'production' ){
+  middleware.push ( reduxLogger );
+}
 
 const store = createStore(
   reducers,
