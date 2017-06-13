@@ -36,6 +36,7 @@ Website in action is located [here](http://simple-car-example.s3-website-ap-sout
 | npm run test  | Runs all the tests  |
 
 ## Technologies used 
+
 _For the purpose of demonstrating the developer proficiency_
 
 * ReactJS
@@ -48,7 +49,9 @@ _For the purpose of demonstrating the developer proficiency_
 * Mocha
 * WCAG 2.0 AA
 
-##
+## Supported Language Features and Polyfills
+
+_per the power of react-create-app and me_
 
 This project supports a superset of the latest JavaScript standard.<br>
 In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:
