@@ -65,7 +65,7 @@ If you use any other ES6+ features that need **runtime support** (such as `Array
 
 ## Developer Notes
 
-1. if you select a make and model, then view the model and decide to come back to change the mode.... the model drop down has lost all the models. I know why, but didnt have time to fix it.
+1. if you select a make and model, then view the model and decide to come back to change the mode.... the model drop down has lost all the models. I know why, but didnt have time to fix it. This is the same problem that shows two cars, and then one disapears.
 2. Server Side Rendering is not done.
 3. I wanted to make a loading mask for the images when they where loading, i didnt have time
 4. I used imutable in a couple of places, but in reality I would either use it or not use it on a project. Frankly, I like it, but Im not sure it is needed
@@ -74,3 +74,7 @@ If you use any other ES6+ features that need **runtime support** (such as `Array
 7. I wish Amazon didnt change the aws cli, it didnt work for me, so all my gateway code is broken. I had to stand up a server in Heroku to make the server.
 8. I REALLY wanted to make a PWA, with Service Workers, but I didnt have time.
 9. I really like the dev server for Webpack 2 :)
+
+## Known Issues
+1. if you select a make and model, then view the model and decide to come back to change the mode.... the model drop down has lost all the models. I know why, but didnt have time to fix it. This is the same problem that shows two cars, and then one disapears.
+2. Slow, very slow.
