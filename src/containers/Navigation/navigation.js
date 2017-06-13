@@ -2,6 +2,8 @@ import {Nav, Navbar} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
 import React from 'react';
 
+import './navigation.css';
+
 export const Navigation = () => (
   <Navbar collapseOnSelect role='navigation'>
     <Navbar.Header>
