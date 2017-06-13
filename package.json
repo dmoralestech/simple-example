@@ -1,6 +1,6 @@
 {
   "name": "simple-example",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "babel-polyfill": "^6.23.0",
