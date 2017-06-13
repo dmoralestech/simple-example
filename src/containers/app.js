@@ -8,8 +8,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as MessageActions from '../actionCreators/messageActions';
-import LoadingMask from '../components/loadingMask'
-import Message from '../components/message';
+import LoadingMask from '../components/loadingMask/loadingMask'
+import Message from '../components/message/message';
 import {Navigation} from './Navigation/navigation';
 
 export class App extends Component {

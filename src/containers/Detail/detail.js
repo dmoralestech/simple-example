@@ -2,18 +2,23 @@
 import {connect} from 'react-redux';
 import {safeGet} from '../../utils';
 import React, {Component} from 'react';
-import Img from '../../components/img';
+import Img from '../../components/img/img';
 import {bindActionCreators} from 'redux';
 import * as ModelAction from '../../actionCreators/modelActions';
 import { Redirect } from 'react-router-dom';
 import {addZeroes, currency, numberWithCommas} from '../../utils';
 
+/**
+ * NOTE: This stateless function is here just for demonstrations purpose
+ */
 const renderDetails = (item,i) => (<dl key={i}>
-  <dt>{item.name}</dt>
-  <p id="cost"
-     aria-label={`The manufacturers suggested retail price is ${currency(numberWithCommas(addZeroes(item.price)))}`}>MSRP: {currency(numberWithCommas(addZeroes(item.price)))}</p>
-  <Img alt={`picture of the car ${item.name}`} src={item.imageUrl} fallbackSrc="./missingImage.svg"/>
+  <dt id="modelName"
+      aria-label={`The Model name is ${item.name}`}>Model Name: {item.name}</dt>
+  <dt id="modelCost"
+     aria-label={`The manufacturers suggested retail price is ${currency(numberWithCommas(addZeroes(item.price)))}`}>MSRP: {currency(numberWithCommas(addZeroes(item.price)))}</dt>
+  <dt id="modelImg"><Img alt={`picture of the car ${item.name}`} src={item.imageUrl} fallbackSrc="./missingImage.svg"/></dt>
 </dl>);
+
 const notFound = () => (<Redirect to='/notFound'/>);
 
 export class Detail extends Component {

@@ -1,12 +1,17 @@
 import {connect} from 'react-redux';
-import Img from '../../components/img';
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import * as MakeAction from '../../actionCreators/makeActions';
 import * as ModelAction from '../../actionCreators/modelActions';
 import * as CarOfTheWeekAction from '../../actionCreators/carOfTheWeekActions';
-import {addZeroes, currency, numberWithCommas} from '../../utils';
+import CarOfTheWeek from "../../components/carOfTheWeek/carOfTheWeek";
 
+/**
+ * THe Home Container.
+ *
+ * Responsible for loading the car of the week
+ *
+ */
 export class Home extends Component {
 
   constructor(props) {
@@ -22,17 +27,11 @@ export class Home extends Component {
   }
 
   render() {
-    let {name = '', price = 0, imageUrl = null, review = null} = this.props.cotw;
+    let {name = '', price = 0, imageUrl = null, review = null, manufacture = null} = this.props.cotw;
     return (
       <div data-component-name={this.displayName}>
         <h1>Car of the week</h1>
-        <fieldse tabindex="0">
-          <legend id="model" aria-label={`The car of the week is the ${name}`}>{name}</legend>
-          <p id="cost"
-             aria-label={`The manufacturers suggested retail price is ${currency(numberWithCommas(addZeroes(price)))}`}>MSRP: {currency(numberWithCommas(addZeroes(price)))}</p>
-          <p id="review">{review}</p>
-          <Img src={imageUrl} id="car_of_the_week_img" fallbackSrc="./missingImage.svg" alt={`picture of the car of the week, the ${name}`}/>
-        </fieldse>
+        <CarOfTheWeek name={name} price={price} imageUrl={imageUrl} review={review} manufacture={manufacture}/>
       </div>
     );
   }

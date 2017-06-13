@@ -30,8 +30,8 @@ export default class LoadingMask extends Component {
   render() {
     return (
       <div className={classNames(['loading-mask',
-        {'loading-mask--on': this.props.inFlight},
-        {'loading-mask--off': this.props.inFlight}])}
+        {'loading-mask--on fade in': this.props.inFlight},
+        {'loading-mask--off fade out': this.props.inFlight}])}
            onClick={this.onClickHandler}
            id="loading-mask"
            data-component-name={this.displayName}>

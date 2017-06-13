@@ -1,5 +1,35 @@
-# simple example
+# Simple Example
 
+A Simple example of a progressive Data Drive Drop Down Selection, with ReactJS, Redux, Fetch, Twitter Bootstrap and Accessibility.
+
+## Environment Variables
+
+| Mandate  | Name      | Purpose | ex |
+|:---------|:----------|:--------|:---|
+| required | API_URL   | The base Url to the hosted api server. If not set, it assumes localhost | [prod](https://simple-example-cars.herokuapp.com/api/v1/)  |
+| required | PUBLIC_URL| The Url to the public html server. Values will be embedded into the processed HTML. | [prod](http://simple-car-example.s3-website-ap-southeast-2.amazonaws.com/) |
+| required | NODE_ENV  | When you deploy, you should set this to 'production'. This will turn off the Redux Logger. | `export NODE_ENV=production`  |
+
+
+## Command Line
+
+| Command       | Purpose   |
+|:--------------|:----------|
+| npm run start | Start the server in development mode, if the API_URL is not set then the local mocks are used. You can point to the production API via the API_URL environment variable. |
+| npm run build | This produces production read code and drops it in the `build` directory. |
+| npm run test  | Runs all the tests  |
+
+## Technologies used 
+_For the purpose of demonstrating the developer proficiency_
+
+* ReactJS
+* Redux
+* Saga
+* Fetch
+* Promises
+* Webpack
+* Ejs
+* Mocha
 
 ## Supported Language Features and Polyfills
 
