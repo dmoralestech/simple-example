@@ -8,6 +8,16 @@ Written by Philip A Senger
 
 Website in action is located [here](http://simple-car-example.s3-website-ap-southeast-2.amazonaws.com/)
 
+## TOC
+
+* [Environment Variables](#environment-variables)
+* [Command Line](#command-line)
+* [Technologies used](#technologies-used)
+* [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)
+* [Developer Notes](#developer-notes)
+* [Known Issues](#known-issues)
+
+
 ## Environment Variables
 
 | Mandate  | Name      | Purpose | ex |
@@ -38,7 +48,7 @@ _For the purpose of demonstrating the developer proficiency_
 * Mocha
 * WCAG 2.0 AA
 
-## Supported Language Features and Polyfills
+##
 
 This project supports a superset of the latest JavaScript standard.<br>
 In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:
